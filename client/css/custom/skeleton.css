@@ -1,0 +1,72 @@
+body { 
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar-custom {
+    border: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.horizontal-center {
+    margin: 0 auto;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.input-page {
+    min-height: 0%;
+    display: block;
+    align-items:center;
+    margin-top: 70px;
+}
+
+.landing-panel {
+    margin-top: -70px;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 3px;
+}
+
+.input-panel {
+    max-width: 100%;
+}
+
+.btn-custom {
+    border: none;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#loaderDiv {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1100;
+   opacity: .6;
+}
+
+.ajax-loader {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -32px; /* -1 * image width / 2 */
+   margin-top: -32px; /* -1 * image height / 2 */
+   display: block;
+}
+
+.video-thumb {
+  cursor: pointer;
+  margin: 10px;
+}

@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-sm-4 video-thumb-col" 
+         data-ng-repeat="video in videos">
+        <video src="{{video.path}}"
+               width="100%" 
+               height="150px"
+               class="video-thumb"
+               data-toggle="modal" 
+               data-target="#videoPanel"
+               data-ng-click="selectedVideo(video)">
+        </video>
+        <strong>{{video.name}}</strong>
+        <button type="button" 
+                class="btn btn-default btn-sm pull-right"
+                data-ng-if="video.approved == 1">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Approved
+        </button>
+    </div>
+</div>
+<video-panel></video-panel>

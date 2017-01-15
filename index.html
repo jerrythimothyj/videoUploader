@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Video Uploader</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Video Uploader">
+  <meta name="keywords" content="Video Uploader">
+  <meta name="author" content="Jerry Thimothy J">
+  
+  <script src="./client/js/lib/jquery/jquery.min.js"></script>
+  <script src="./client/js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="./client/js/lib/angular/angular.min.js"></script>
+  <script src="./client/js/lib/angular/angular-ui-router.min.js"></script>  
+  <script src="./client/js/lib/angular/ng-file-upload.js"></script>  
+
+  <link href='./client/css/lib/fonts/pt-sans.css' rel='stylesheet' type='text/css'>
+  <link href="./client/css/lib/bootstrap/bootstrap.min.css" rel='stylesheet' type='text/css'>
+  <link href='./client/css/lib/fonts/source-sans-pro.css' rel='stylesheet' type='text/css'>  
+  <link href="./client/css/custom/skeleton.css" rel='stylesheet' type='text/css'>
+  <link href="./client/css/custom/text.css" rel='stylesheet' type='text/css'>
+  <link href="./client/css/custom/colors.css" rel='stylesheet' type='text/css'>
+  
+</head>
+<body>
+  <div data-ng-app="videoUploader">
+    <navbar></navbar>
+    
+    <div class="container-fluid">
+      <div ui-view></div>
+    </div>
+    <div id="loaderDiv" loader>
+      <img src="./client/images/ajax_loader.gif" class="ajax-loader">
+    </div>
+  </div>
+
+  <script src="./client/js/modules/videoUploader.js"></script>
+
+  <script src="./client/js/controllers/navbarController.js"></script>
+  <script src="./client/js/controllers/uploadVideoController.js"></script>
+  <script src="./client/js/controllers/allVideosController.js"></script>
+  <script src="./client/js/controllers/approvedVideosController.js"></script>
+  <script src="./client/js/controllers/videoGridController.js"></script>
+  <script src="./client/js/controllers/videoPanelController.js"></script>
+
+  <script src="./client/js/directives/navbarDirective.js"></script>
+  <script src="./client/js/directives/videoGridDirective.js"></script>
+  <script src="./client/js/directives/videoPanelDirective.js"></script>
+  <script src="./client/js/directives/loaderDirective.js"></script>
+
+  <script src="./client/js/services/videosService.js"></script>
+
+  <script src="./client/js/factories/loaderInterceptorFactory.js"></script>
+  
+  <script src="./client/js/custom/misc.js"></script>
+  
+</body>
+</html>

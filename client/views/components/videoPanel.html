@@ -1,0 +1,38 @@
+<div id="videoPanel" 
+     class="modal fade" 
+     role="dialog" 
+     data-backdrop="static" 
+     data-keyboard="false">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" 
+                    class="close" 
+                    data-dismiss="modal"
+                    data-ng-click="stopVideo(selVideo)">&times;</button>
+            <h4 class="modal-title">{{selVideo.name}}</h4>
+          </div>
+          <div class="modal-body">
+            <video src="{{selVideo.path}}"
+                   width="100%" 
+                   height="100%"
+                   controls>
+            </video>
+            <p>{{selVideo.description}}</p>
+            <p>{{selVideo.author}}</p>
+            <p>{{selVideo.dttm}}</p>
+            <p data-ng-if="selVideo.approved == 0">
+                <button data-ng-click="approveVideo(selVideo.sl)">Approve</button>
+            </p>
+            <p>
+              <button type="button" 
+                      class="btn btn-default btn-sm"
+                      data-ng-if="selVideo.approved == 1">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Approved
+              </button>
+            </p>
+          </div>
+        </div>
+    </div>
+</div>

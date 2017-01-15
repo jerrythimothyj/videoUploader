@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            Video Uploader
+          </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <!--data-ng-hide="$state.includes('register')"-->
+        <ul class="nav navbar-nav">
+            <li ui-sref-active="active" class="active" >
+              <a ui-sref="upload-video">
+                Upload Video
+              </a>
+            </li>
+            <li ui-sref-active="active" >
+              <a ui-sref="all-videos">
+                All Videos
+              </a>
+            </li>
+            <li ui-sref-active="active" >
+              <a ui-sref="approved-videos">
+                Approved Videos 
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
