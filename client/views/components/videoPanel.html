@@ -19,9 +19,9 @@
                    height="100%"
                    controls>
             </video>
-            <p>{{selVideo.description}}</p>
-            <p>{{selVideo.author}}</p>
-            <p>{{selVideo.dttm}}</p>
+            <p><em>{{selVideo.description}}</em></p>
+            <p><strong>{{selVideo.author}}</strong></p>
+            <p><small>{{selVideo.dttm}}</small></p>
             <p data-ng-if="selVideo.approved == 0">
                 <button data-ng-click="approveVideo(selVideo.sl)">Approve</button>
             </p>

@@ -30,7 +30,8 @@ angular.module('videoUploader')
 	    	if($scope.video && 
 	    		$scope.video.name != "" 
 	    		&& $scope.video.author != "" 
-	    		&& $scope.videoFile) {
+	    		&& $scope.videoFile
+	    		&& $scope.videoFile.size <= 3000000) {
 				Upload.upload({
 	                url: './server/api.php?api=uploadVideo',
 	                data: {
