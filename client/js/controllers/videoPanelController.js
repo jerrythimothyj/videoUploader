@@ -3,7 +3,7 @@
 angular.module('videoUploader')
     .controller('videoPanelController', function($scope, videosService) {
     	$scope.stopVideo = () => {
-    		$('#videoPanel').find('video')[0].stop();
+    		$('#videoPanel').find('video')[0].pause();
     	}
 
     	$scope.approveVideo = (sl) => {
